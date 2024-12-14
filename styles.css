@@ -1,0 +1,134 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in total height */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px; /* Adjusted max-width for better fit */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto; /* Ensure content is scrollable if it overflows */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; /* Allow inputs to wrap to new line if necessary */
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px; /* Add margin for spacing between buttons */
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    word-break: break-word; /* Ensure text breaks correctly */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td button {
+    padding: 5px 10px;
+    margin: 2px; /* Added margin for spacing between buttons */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+td button.deleteButton {
+    background-color: #dc3545;
+}
+
+td button.deleteButton:hover {
+    background-color: #c82333;
+}
+
+td button.finishButton:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px; /* Ensure footer is at the bottom */
+    font-size: 14px;
+    color: #777;
+    width: 100%; /* Ensure footer stretches across the width */
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    form input[type="text"],
+    form input[type="date"],
+    form input[type="time"],
+    form input[type="text"] {
+        flex: 100%;
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+
+    table {
+        font-size: 14px; /* Adjust table font size for smaller screens */
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
